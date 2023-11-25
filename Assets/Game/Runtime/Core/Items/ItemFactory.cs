@@ -1,9 +1,6 @@
-using UnityEngine;
+using StandardSetup.Runtime.Util;
 
 namespace Game.Runtime.Core.Items
 {
-    public class ItemFactory : MonoBehaviour
-    {
-       
-    }
+    public class ItemFactory : Factory<Item> { }
 }
