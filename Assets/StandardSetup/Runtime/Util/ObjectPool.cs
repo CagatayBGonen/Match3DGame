@@ -2,7 +2,9 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-[System.Serializable]
+namespace StandardSetup.Runtime.Util
+{
+    [System.Serializable]
 public class ObjectPoolItem<T> where T : PoolableObject
 {
     public T objectToPool;
@@ -85,4 +87,5 @@ public class ObjectPool : Singleton<ObjectPool>
         pooledObjects[obj.GetType()].Add(obj);
         return obj;
     }
+}
 }
