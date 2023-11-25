@@ -3,7 +3,12 @@ using UnityEngine;
 
 namespace StandardSetup.Runtime.Handlers
 {
-    public class InputHandler
+    public interface ITouchResponse
+    {
+        void OnPointerDown();
+    }
+    
+    public class InputHandler : ITouchResponse
     {
         public Action OnPointerDownAction;
         public Action OnPointerUpAction;
@@ -36,7 +41,7 @@ namespace StandardSetup.Runtime.Handlers
             }
         }
 
-        private void OnPointerDown()
+        public void OnPointerDown()
         {
             PointerDownPosition = Input.mousePosition;
             OnPointerDownAction?.Invoke();

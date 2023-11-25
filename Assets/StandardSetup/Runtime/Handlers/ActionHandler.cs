@@ -9,6 +9,7 @@ namespace StandardSetup.Runtime.Handlers
         public const string GameStateChangeKey = "GameStateChangeKey";
         public const string CoinUpdateKey = "CoinUpdateKey";
         public const string LevelUpdateKey = "LevelUpdateKey";
+        public const string GameLevelStateChangedKey = "GameLevelStateChangedKey";
     }
 
     public static class ActionHandler<T>
