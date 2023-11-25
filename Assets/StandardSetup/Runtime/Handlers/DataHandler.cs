@@ -81,6 +81,7 @@ namespace StandardSetup.Runtime.Handlers
         {
             PlayerPrefs.DeleteAll();
             PlayerPrefs.Save();
+            Debug.Log("Cleared All Data");
         }
 
         public static string GetJsonData(string key)

@@ -1,0 +1,16 @@
+{
+    "name": "StandardSetup.Editor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9e123188af6704f64920d8c9fa46970c"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
